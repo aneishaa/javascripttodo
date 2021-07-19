@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        var todolist = [];
+        onload = function(){
+            document
+            .querySelector("button")
+            .addEventListener("click", addTaskHandler)
+        }
+        function addTaskHandler(){
+            var ntask = document.querySelector("input").value;
+            if(ntask){
+                var task = { 
+                    task : ntask, 
+                    status : false 
+                }
+                todolist.push(task);
+                renderTasks();
+                document.querySelector("input").value = "";
+            }else{
+                alert("add a task")
+            }
+            console.log(todolist);
+        }
+        function renderTasks(){
+            document.querySelector("ul").innerHTML = "";
+            for(var i = 0; i < todolist.length; i++){
+                if(todolist[i].status){
+                    document.querySelector("ul").innerHTML += "<li style='text-decoration: line-through'>"+todolist[i].task+"</li>"
+                }else{
+                    document.querySelector("ul").innerHTML += "<li>"+todolist[i].task+" <button onclick='selectedTask("+i+")'> Done </button></li>"
+                }
+            }
+        }
+        function selectedTask(idx){
+            todolist[idx].status = true;
+            console.log(todolist);
+            renderTasks();
+        }
+    </script> -->
+    <script>
+        var todolist=[];function addTaskHandler(){var t=document.querySelector("input").value;if(t){var e={task:t,status:!1};todolist.push(e),renderTasks(),document.querySelector("input").value=""}else alert("add a task");console.log(todolist)}function renderTasks(){document.querySelector("ul").innerHTML="";for(var t=0;t<todolist.length;t++)todolist[t].status?document.querySelector("ul").innerHTML+="<li style='text-decoration: line-through'>"+todolist[t].task+"</li>":document.querySelector("ul").innerHTML+="<li>"+todolist[t].task+" <button onclick='selectedTask("+t+")'> Done </button></li>"}function selectedTask(t){todolist[t].status=!0,console.log(todolist),renderTasks()}onload=function(){document.querySelector("button").addEventListener("click",addTaskHandler)};
+    </script>
+</head>
+<body>
+    <input type="text">
+    <button>Add Task</button>
+    <hr>
+    <h1>Task List</h1>
+    <ul></ul>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="lib/jquery-3.6.0.js"></script>
+    <style>
+        .boxer{
+            background-color: orangered;
+            color: papayawhip;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            text-align: justify;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+    <script>
+        $(function(){
+           // $("p").css("border","2px solid red");
+           // $(".box").css("border","2px solid red");
+           // $("li:first-child").css("border", "2px solid red");
+           // $("li:nth-child(2)").css("border", "2px solid red");
+           // $("ol li:nth-child(3n)").css("border", "2px solid red");
+
+        //    $("p").each(function(idx, elm){
+        //        // console.log(arguments[0], arguments[1]);
+        //         $(elm).css("border", "5px dotted red");
+        //    })
+         //   $("ul:first").children().css("border","2px solid red");
+         // $("ul").filter(":has(.x)").css("border", "2px solid red");
+
+        /*  
+        $("ul")
+         .filter(":contains(vijay)")
+         .css("border", "2px solid red");
+         */
+
+         // $("p").wrap("<div class='boxer'></div>");
+         // $("p").wrapAll("<div class='boxer'></div>");
+
+         $("p").wrap(".boxer");
+
+        }); 
+    </script>
+</head>
+<body>
+    <div class="boxer"></div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta necessitatibus quaerat, maiores nisi voluptatem commodi ducimus ex ipsum, explicabo beatae recusandae veniam voluptatibus. Id, nemo. Quia aliquid consectetur ea optio!
+    </p>
+    <p class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta necessitatibus quaerat, maiores nisi voluptatem commodi ducimus ex ipsum, explicabo beatae recusandae veniam voluptatibus. Id, nemo. Quia aliquid consectetur ea optio!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta necessitatibus quaerat, maiores nisi voluptatem commodi ducimus ex ipsum, explicabo beatae recusandae veniam voluptatibus. Id, nemo. Quia aliquid consectetur ea optio!
+    </p>
+   <ul>
+       <li class="x">List Item 1</li>
+       <li>List Item 2</li>
+       <li>List Item 3</li>
+       <li>List Item 4</li>
+       <li>List Item 5</li>
+   </ul>
+   <ul>
+       <li>List Item 1</li>
+       <li>List Item 2</li>
+       <li>List Item 3</li>
+       <li>List Item 4</li>
+       <li>List Item 5 vijay</li>
+   </ul>
+   <ul>
+       <li>List Item 1</li>
+       <li>List Item 2</li>
+       <li>List Item 3</li>
+       <li>List Item 4</li>
+       <li>List Item 5</li>
+   </ul>
+   <ol>
+       <li>List Item 1</li>
+       <li>List Item 2</li>
+       <li>List Item 3</li>
+       <li>List Item 4</li>
+       <li>List Item 5</li>
+       <li>List Item 6</li>
+       <li>List Item 7</li>
+       <li>List Item 8</li>
+       <li>List Item 9</li>
+       <li>List Item 10</li>
+       <li>List Item 11</li>
+       <li>List Item 12</li>
+       <li>List Item 13</li>
+       <li>List Item 14</li>
+       <li>List Item 15</li>
+       <li>List Item 16</li>
+       <li>List Item 17</li>
+       <li>List Item 18</li>
+       <li>List Item 19</li>
+       <li>List Item 20</li>
+   </ol>
+</body>
+</html>
